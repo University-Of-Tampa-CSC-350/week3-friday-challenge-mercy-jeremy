@@ -13,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [m1_58241.newInstance] factory method to
+ * Use the [FragmentView.newInstance] factory method to
  * create an instance of this fragment.
  */
-class M1_58241 : Fragment() {
+class FragmentView : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -34,15 +34,7 @@ class M1_58241 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_m1_58241, container, false)
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        view.findViewById<Button>(R.id.button6).setOnClickListener {
-            findNavController().navigate(R.id.action_m1_58241_to_m1_76542)
-        }
+        return inflater.inflate(R.layout.fragment_view, container, false)
     }
 
     companion object {
@@ -52,12 +44,12 @@ class M1_58241 : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment m1_58241.
+         * @return A new instance of fragment FragmentView.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            M1_58241().apply {
+            FragmentView().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
