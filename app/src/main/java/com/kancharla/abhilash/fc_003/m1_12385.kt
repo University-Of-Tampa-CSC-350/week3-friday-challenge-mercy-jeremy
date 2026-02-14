@@ -37,6 +37,8 @@ class m1_12385 : Fragment() {
         return inflater.inflate(R.layout.fragment_m1_12385, container, false)
     }
 
+
+
     companion object {
         /**
          * Use this factory method to create a new instance of
@@ -56,4 +58,6 @@ class m1_12385 : Fragment() {
                 }
             }
     }
+
+
 }
