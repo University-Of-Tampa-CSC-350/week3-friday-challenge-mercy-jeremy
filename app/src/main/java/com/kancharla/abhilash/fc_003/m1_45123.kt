@@ -43,7 +43,7 @@ class M1_45123 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<Button>(R.id.button5).setOnClickListener {
-            findNavController().navigate(R.id.action_m1_45123_to_m1_97109)
+            findNavController().navigate(R.id.action_m1_45123_to_m1_97123)
         }
     }
 
